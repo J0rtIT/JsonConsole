@@ -140,41 +140,21 @@ namespace JsonConsole
     public class Views
     {
         public int total { get; set; }
-        public Historical1 historical { get; set; }
+        public Historical historical { get; set; }
     }
 
-    public class Historical1
-    {
-        public int change { get; set; }
-        public string resolution { get; set; }
-        public int quantity { get; set; }
-        public Value1[] values { get; set; }
-    }
+   
 
-    public class Value1
-    {
-        public string date { get; set; }
-        public int value { get; set; }
-    }
+  
 
     public class Likes
     {
         public int total { get; set; }
-        public Historical2 historical { get; set; }
+        public Historical historical { get; set; }
     }
 
-    public class Historical2
-    {
-        public int change { get; set; }
-        public string resolution { get; set; }
-        public int quantity { get; set; }
-        public Value2[] values { get; set; }
-    }
+    
 
-    public class Value2
-    {
-        public string date { get; set; }
-        public int value { get; set; }
-    }
+   
 
 }

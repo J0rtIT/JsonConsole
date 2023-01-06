@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Text;
 using Newtonsoft.Json;
 
 namespace JsonConsole
@@ -30,7 +31,11 @@ namespace JsonConsole
                     }
                 }
             }
-            File.WriteAllText(args[1],JsonConvert.SerializeObject(p));
+            File.WriteAllText(args[1],JsonConvert.SerializeObject(p), new UTF8Encoding(false));
+
+           // var z = JsonConvert.DeserializeObject<List<Photo>>(File.ReadAllText(args[1])).Where(x => x.promoted_at != null);
+
+
             /*
             var all = from x in p
                 where (x.promoted_at != null)
